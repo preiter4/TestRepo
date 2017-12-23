@@ -12,8 +12,17 @@ pipeline {
       }
     }
     stage('Release') {
-      steps {
-        bat 'echo "There"'
+      parallel {
+        stage('Release') {
+          steps {
+            bat 'echo "There"'
+          }
+        }
+        stage('') {
+          steps {
+            bat 'echo "Step"'
+          }
+        }
       }
     }
   }
