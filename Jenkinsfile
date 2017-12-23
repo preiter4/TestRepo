@@ -20,7 +20,7 @@ pipeline {
         }
         stage('') {
           steps {
-            bat 'echo "Steppppp"'
+            bat 'echo "Steppppppp"'
           }
         }
       }
